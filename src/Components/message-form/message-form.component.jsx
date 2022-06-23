@@ -5,7 +5,7 @@ export default function MessageForm() {
     <section className="message__form--container">
       <form>
         <input type="text" />
-        <button type='submit'></button>
+        <button type='submit'>↳</button>
       </form>
     </section>
   )
