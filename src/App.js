@@ -1,9 +1,13 @@
-import MessageForm from './Components/message-form/message-form.component';
-import './App.scss';
+import MessageForm from "./Components/message-form/message-form.component";
+import "./App.scss";
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
-    <MessageForm />
+    <Routes>
+      <Route index element={<MessageForm />} />
+      <Route path="/p" element={} />
+    </Routes>
   );
 }
 
