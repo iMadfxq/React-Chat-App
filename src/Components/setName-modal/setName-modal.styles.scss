@@ -1,9 +1,73 @@
-.SetNameModal form {
+.wrapper {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.597);
 
-  label {
+  .closeButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 4.2rem;
+    color: rgba(255, 255, 255, 0.491);
+    cursor: pointer;
+  }
+
+  .SetNameModal {
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      span {
+        margin-bottom: 5px;
+      }
+
+      input {
+        font-size: 1.6rem;
+        padding: 0px 10px;
+        height: 30px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+
+      button {
+        font-size: 1.6rem;
+        height: 30px;
+        width: 100px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: purple;
+        color: white;
+        cursor: pointer;
+      }
+
+    }
+    p{
+      font-size: 1.2rem;
+    }
   }
 }
