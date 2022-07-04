@@ -89,3 +89,12 @@
   }
 }
 }
+
+@media screen and (max-width: 600px) {
+  .main__channelSelector {
+    flex-direction: column;
+  }
+  .main__title {
+    margin-top: 60px;
+  }
+}
