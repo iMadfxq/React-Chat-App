@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 2;
 
 
   &__themeSelector {
@@ -91,10 +92,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .main__channelSelector {
+  main .main__channelSelector {
     flex-direction: column;
   }
-  .main__title {
+  main .main__title {
     margin-top: 60px;
   }
 }

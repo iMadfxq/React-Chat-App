@@ -1,9 +1,13 @@
 import './setName-modal.styles.scss'
 
 export default function SetNameModal() {
+
+  const closeModal = (e) => {
+e.target.parentElement.classList.add('closed')
+  }
   return (
     <section className="wrapper">
-      <span className='closeButton'>🆇</span>
+      <span onClick={closeModal} className='closeButton'>🆇</span>
       <section className="SetNameModal">
         <form>
           <label>
