@@ -8,7 +8,8 @@ function App() {
   return (
     <Routes>
       <Route index element={<Home />} />
-      <Route path={'/chat'} element={<Channel channelName={'General'} />} />
+      <Route path={'/General'} element={<Channel channelName={'General'} />} />
+      <Route path={'/Jobs'} element={<Channel channelName={'Jobs'} />} />
     </Routes>
   );
 }
