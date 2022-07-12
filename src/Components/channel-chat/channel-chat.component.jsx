@@ -1,4 +1,5 @@
 import MessageForm from "../message-form/message-form.component"
+import ChannelMessages from "../channel-messages/channel-messages.component"
 
 import './channel-chat.styles.scss'
 
@@ -9,12 +10,7 @@ export default function Channel({channelName}) {
         <h2>#{channelName}</h2>
         <button>⌂ Home</button>
       </header>
-      <section className="channel__messages">
-        <article>
-          <p>Message</p>
-          <span>Date</span>
-        </article>
-      </section>
+      <ChannelMessages />
       <MessageForm />
     </section>
   )
