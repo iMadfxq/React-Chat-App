@@ -16,7 +16,7 @@ export default function Home() {
         </section>
         <ChannelSelector />
       </main>
-      <SetNameModal />
+      {!localStorage.getItem('username') ? <SetNameModal /> : <></>}
     </>
   );
 }
