@@ -13,8 +13,8 @@ export default function ChannelSelectorItem({ title, topics }) {
     <article>
       <h3>{title}</h3>
       <ul>
-        {topics.map((topic) => (
-          <li>{topic}</li>
+        {topics.map((topic, i) => (
+          <li key={i}>{topic}</li>
         ))}
       </ul>
       <button onClick={handleClick} data-chat={title}>
